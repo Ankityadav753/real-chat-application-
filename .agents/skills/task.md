@@ -1,0 +1,52 @@
+# Task List - Real-Time Chat App Implementation
+
+- [x] Setup Backend Foundation
+    - [x] Initialize `backend/package.json` and install dependencies
+    - [x] Create `backend/.env.example`
+    - [x] Build Mongoose connection (`backend/config/db.js`)
+    - [x] Set up basic Express server skeleton with middleware (`backend/server.js`)
+- [x] Implement Backend Models
+    - [x] Create User Schema (`backend/models/user.model.js`)
+    - [x] Create Conversation Schema (`backend/models/conversation.model.js`)
+    - [x] Create Message Schema (`backend/models/message.model.js`)
+    - [x] Create Notification Schema (`backend/models/notification.model.js`)
+- [x] Implement Authentication & Security
+    - [x] Build token utility for JWT and cookies (`backend/utils/token.js`)
+    - [x] Create JWT Verification Middleware (`backend/middlewares/auth.middleware.js`)
+    - [x] Develop authentication controllers (`backend/controllers/auth.controller.js`)
+    - [x] Connect auth routes (`backend/routes/auth.routes.js`)
+- [x] Implement Upload and Storage
+    - [x] Configure Cloudinary integration (`backend/config/cloudinary.js`)
+    - [x] Create Multer upload middleware (`backend/middlewares/upload.middleware.js`)
+- [x] Implement Backend Core APIs
+    - [x] Users: Profile updates, password resets, search (`backend/controllers/user.controller.js`, `backend/routes/user.routes.js`)
+    - [x] Conversations: List, get/create 1-to-1, pin/unpin (`backend/controllers/conversation.controller.js`, `backend/routes/conversation.routes.js`)
+    - [x] Messages: Send, fetch, edit, delete, react, star (`backend/controllers/message.controller.js`, `backend/routes/message.routes.js`)
+    - [x] Groups: Create, rename, edit members, leave, delete (`backend/controllers/group.controller.js`, `backend/routes/group.routes.js`)
+- [x] Set Up Socket.io Backend
+    - [x] Implement socket orchestration (`backend/socket/socket.js`)
+    - [x] Add room joining, online status, typing indicators, delivery checkmarks, seen status, group notifications
+- [x] Initialize Frontend Foundation
+    - [x] Create React + Vite + Tailwind CSS project in `frontend/`
+    - [x] Configure tailwind and postcss
+    - [x] Setup folder structure and install required packages (Zustand, Axios, React Router, Socket.io-client, Framer Motion, React Icons, etc.)
+- [x] Build Frontend State Management (Zustand)
+    - [x] Auth Store (`frontend/src/store/useAuthStore.js`)
+    - [x] Chat Store (`frontend/src/store/useChatStore.js`)
+- [x] Setup Frontend Realtime & Hooks
+    - [x] Socket Context (`frontend/src/context/SocketContext.jsx`)
+    - [x] Custom hooks: `useChat`, `useDebounce`
+- [x] Build Core Components
+    - [x] Sidebar: profile, searches, conversation list, online users, settings, logout
+    - [x] Chat Window: Header, message area, dynamic message components (reactions, starred, status checks, replies), Input Box, Emoji Picker, voice notes, attachments
+    - [x] Modals: Group creation, profile update, settings
+- [x] Develop Pages
+    - [x] Landing page
+    - [x] Login & Register pages
+    - [x] Dashboard (responsive columns layout)
+    - [x] 404 page
+- [/] Review & Polish
+    - [ ] Implement dark mode and visual themes
+    - [x] Ensure animations and skeleton loaders look premium
+    - [ ] Verify functionality (two clients testing)
+    - [x] Write documentation (`README.md` and walkthrough report)
